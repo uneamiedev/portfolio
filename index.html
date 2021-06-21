@@ -5,11 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Unique page title - My Site</title>
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <meta property="og:title" content="Portfolio | Amy Ndiaye - Développeuse Web">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://amyndy.com/assets/images/portfolio_thumbnail.png">
+    <meta property="og:url" content="https://amyndy.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Portfolio - Amy Ndiaye - Développeuse web</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header class="header | container flex justify-between mt-40 fancy-section">
+        <a href="/">Portfolio</a>
+        <time datetime="2021">2021</time>
+    </header>
+
+    <main class="main container">
+        <section class="hero">
+            <h1 class="hero__title font-secondary">Hello world, <br> moi c'est Amy<a href="#name-pronounciation">*</a>
+            </h1>
+            <p class="hero__body">
+                Si vous tombez sur mon portfolio, sachez qu'il est en cours de réalisation.
+            </p>
+            <p id="name-pronounciation" class="footnote">*ça se prononce "émi"</p>
+        </section>
+        <div class="windows">
+            <section id="to-do" class="to-do | window mx-auto -rotate-3">
+                <h2 class="window__header">À faire</h2>
+                <div class="window__body">
+                    <ul class="checklist">
+                        <li class="checklist-item completed"><del>Portfolio</del></li>
+                        <li class="checklist-item completed"><del>Boire du thé x3</del></li>
+                        <li class="checklist-item">Faire des jeux de mots</li>
+                        <li class="checklist-item">Danser</li>
+                        <li class="checklist-item">Manger</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="latest-project" class="latest-project | window mx-auto rotate-3">
+                <h2 class="window__header">Dernier projet</h2>
+                <div class="window__body relative">
+                    <div class="project">
+                        <h3 class="project__title">
+                            <a class="stretched-link" href="https://github.com/uneamiedev/devlog">LogIt</a>
+                        </h3>
+                        <p class="project__excerpt">À chaque projet, son aventure !</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="notes" class="notes | window mx-auto -rotate-2">
+                <h2 class="window__header">Notes</h2>
+                <div class="window__body">
+                    <div class="note-list">
+                        <article class="note relative">
+                            <header>
+                                <h3>
+                                    <a class="stretched-link" href="https://www.linkedin.com/feed/update/urn:li:activity:6667109594973786114/">
+                                        📣 DjangoGirls 2020
+                                    </a>
+                                </h3>
+                            </header>
+                            <p>Depuis la fin de ma formation, s'il...</p>
+                        </article>
+                        <article class="note relative">
+                            <header>
+                                <h3>
+                                    <a class="stretched-link" href="https://www.linkedin.com/feed/update/urn:li:activity:6682666565042806784/">
+                                        🎵 Coder en musique
+                                    </a>
+                                </h3>
+                            </header>
+                            <p>J'aime bien travailler en musique...</p>
+                        </article>
+                        <article class="note relative">
+                            <header>
+                                <h3>
+                                    <a class="stretched-link" href="https://www.linkedin.com/feed/update/urn:li:activity:6742464023687663617/">
+                                        💻 Animer un atelier Wi-Filles
+                                    </a>
+                                </h3>
+                            </header>
+                            <p>La semaine dernière, j'ai eu l'occasi...</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer | container flex justify-between items-center mb-40 fancy-section">
+        <ul class="social-media items-center">
+            <li class="social-media__item"><a href="https://www.linkedin.com/in/amyndiaye/">Linkedin</a></li>
+            <li class="social-media__item"><a href="https://twitter.com/uneamiedev">Twitter</a></li>
+            <li class="social-media__item"><a href="https://github.com/uneamiedev">GitHub</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
