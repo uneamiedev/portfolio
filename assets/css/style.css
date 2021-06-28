@@ -254,11 +254,19 @@ a:active {
 }
 
 .latest-project .window__body {
-	background: #2455f7;
+	min-height: 254px;
+}
+
+.latest-project .window__body img{
+	position: absolute;
+	width:100%;
+	height: 100%;
 }
 
 .latest-project .project {
+	position: absolute;
 	padding: 0 2rem;
+	z-index: 1;
 }
 
 .latest-project .project__title {
@@ -456,7 +464,7 @@ a:active {
 }
 
 .footnote {
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
